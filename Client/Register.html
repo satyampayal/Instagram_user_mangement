@@ -135,7 +135,7 @@ Register.html
     const registerUser =async(payload)=>{
       
         try {
-        const resp = await fetch("http://localhost:8081/signup",{
+        const resp = await fetch("http://localhost:8081/register",{
             method:"POST",
             headers:{"content-type":"application/json"},
             body:JSON.stringify(payload)

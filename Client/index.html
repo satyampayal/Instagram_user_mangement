@@ -64,7 +64,7 @@
             credentials:"include"
         });
         if(resp.status!==200){window.location.href="http://localhost:5500/Client/login.html"}
-        const {data} = await resp.json();
+        const {data} = await resp.json();// data diya hamene inhe respond me {data:{_id:.. }}
         const userName = document.getElementById("userName")
         const userEmail = document.getElementById("userEmail")
         const userBio = document.getElementById("userBio")
